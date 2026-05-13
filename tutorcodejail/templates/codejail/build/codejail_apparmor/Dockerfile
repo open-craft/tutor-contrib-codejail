@@ -1,7 +1,7 @@
 FROM golang:1.25.4 AS go_compiler
 
-# Populated automatically by `docker buildx` from the --platform flag.
-ARG TARGETARCH=amd64
+# Populated automatically by `docker buildx`.
+ARG TARGETARCH
 
 RUN mkdir /app
 WORKDIR /app
