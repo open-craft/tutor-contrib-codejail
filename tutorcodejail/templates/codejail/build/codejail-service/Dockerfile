@@ -8,7 +8,7 @@ FROM scratch AS sandbox-dependencies
 # packages into the sandbox environment. Defaults to the codejail
 # dependencies in edx-platform.
 ARG SANDBOX_DEPS_REPO={{ EDX_PLATFORM_REPOSITORY }}
-ARG SANDBOX_DEPS_VERSION={{ CODEJAIL_SERVICE_V2_VERSION }}
+ARG SANDBOX_DEPS_VERSION={{ EDX_PLATFORM_VERSION }}
 # Path to the lockfile in the deps repo, as dir + filename.
 #
 # The path base.txt will get the latest dependencies, but this needs
